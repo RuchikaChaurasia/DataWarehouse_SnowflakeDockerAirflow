@@ -6,8 +6,8 @@ This repository contains two Apache Airflow DAGs that compute Weekly Active User
 - **ELT**: Extract → Load → Transform (transform happens inside the warehouse using SQL)
 
 ## Files
-- `dag_etl_wau.py` — ETL-style WAU pipeline
-- `dag_elt_wau.py` — ELT-style WAU pipeline
+- `etl_weekly_active_users.py` — ETL-style WAU pipeline
+- `elt_weekly_active_users.py` — ELT-style WAU pipeline
 
 ## WAU Definition
 WAU is calculated as the **count of distinct active users** in a 7-day window, typically aggregated at a weekly grain.
